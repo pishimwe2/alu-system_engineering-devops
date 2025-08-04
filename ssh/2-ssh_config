@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# SSH client configuration to use a private key and disable password authentication
+
+echo "Host myserver
+    HostName 192.168.1.100
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no" > ~/.ssh/config
